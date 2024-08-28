@@ -1,0 +1,6 @@
+Madison Hixson
+Creative Coding 
+8/28/24
+GUI vs CLI
+
+My understanding of GUI is that GUI is the normal view we see on any computer. It is an app that looks like a little yellow and blue file at the bottom of the screen. We can access it and find lots of different directories or folders that hold files and documents as well as pictures. We see these files as borders that go across the screen with the file’s name being inside towards the left of the border. We can access what’s inside of the files through this app. CLI however is very different. CLI is shown in code and can be seen through programs such as Git Bash. CLI can be a bit more difficult to navigate because it uses a different language. However with CLI we can view the files and functions of the files on a deeper level. It is a way to communicate directly with the computer and everything stored on it. I personally find that it is very fun to explore CLI and discover new shortcuts and code. I also prefer to use CLI just because I am very interested in seeing the inner workings of computers and how they function. 
