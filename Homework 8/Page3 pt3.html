@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>Page 3</title>
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script>
+        function checkboxes() 
+        {
+            // Prevent default form submission behavior
+            
+
+            var firstName = document.getElementById("fname").value;
+
+            // Check if the first name input is empty
+            if (firstName === "") {
+                document.getElementById("fname").style.backgroundColor = "red";
+                document.getElementById("fname").focus()
+            } else {
+                document.getElementById("fname").style.backgroundColor = "white"; // Clear the red color if there's a value
+            }
+
+
+            if (firstName === "") {
+                document.getElementById("lname").style.backgroundColor = "red";
+                document.getElementById("lname").focus()
+            } else {
+                document.getElementById("lname").style.backgroundColor = "white"; // Clear the red color if there's a value
+            }
+
+
+            if (firstName === "") {
+                document.getElementById("Email").style.backgroundColor = "red";
+                document.getElementById("Email").focus()
+            } else {
+                document.getElementById("Email").style.backgroundColor = "white"; // Clear the red color if there's a value
+            }
+
+
+            if (document.getElementById("yes").checked ==false){
+                document.getElementById ("message").innerHTML ="Please accept the terms and conditions"
+            }
+            else {
+                document.getElementById("message").innerHTML ="Thank you"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2><span id="txtcolor">Contact Us: </span></h2>
+    
+    <!-- Form with correct onsubmit event -->
+    <form>
+        First Name: <input type="text" id="fname"><br>
+        Last Name: <input type="text" id="lname"><br>
+        Email Address: <input type="text" id="Email"><br>
+        <div id="mark">
+            <button id="mySubmit" type="button" onclick="checkboxes()">Submit</button>
+        </div>
+    </form>
+
+    <h3><span id="txtcolor">Accept these terms and conditions of agreement?</span></h3>
+    <input type="radio" id="yes" name="Y/N" value="Yes"> Yes <br>
+    <input type="radio" id="no" name="Y/N" value="No"> No <br>
+    <span id="message" style="color: red">
+
+    </span>
+
+    <h3><div class="bgPink"><a href="HomePage.html">Page 1</a></div></h3>
+    <h3><div class="bgPink"><a href="Page2.html">Page 2</a></div></h3>
+</body>
+</html>
